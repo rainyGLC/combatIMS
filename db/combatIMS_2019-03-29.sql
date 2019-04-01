@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.24)
 # Database: combatIMS
-# Generation Time: 2019-03-29 01:32:10 +0000
+# Generation Time: 2019-03-29 04:00:35 +0000
 # ************************************************************
 
 
@@ -42,7 +42,7 @@ DROP TABLE IF EXISTS `classify`;
 
 CREATE TABLE `classify` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `classify_name` varchar(255) DEFAULT NULL COMMENT '分类名',
+  `name` varchar(255) DEFAULT NULL COMMENT '分类名',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
