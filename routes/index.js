@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var indexController = require('./../controllers/index.js');
 
 
 /* GET home page. */
@@ -7,12 +8,7 @@ var router = express.Router();
 //   res.render('index', { title: 'Express' });
 // });
 
-router.get('/article',function(req,res,next) {
-  res.render('index')
-});
-
-router.get('/article/detali',function(req,res,next) {
-  res.render('details')
-});
+router.get('/article',indexController.indexRender);
+router.get('/article/:id',indexController.detailsRender);
 
 module.exports = router;

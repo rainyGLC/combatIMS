@@ -7,18 +7,14 @@
 {% block content %}
 <div class="article-container">
   <ul class="article-list">
+    {% for val in articles %}
     <li class="article-item">
-      <span class="member">1</span>
+      <span class="member">{{loop.index}}</span>
       <span class="article-classsify">
-        <a class="classify-title" href="">轻松学javascript</a> 
+        <a class="classify-title" href="/article/{{val.id}}" target="_blank">{{val.title}}</a> 
       </span>
     </li>
-    <li class="article-item">
-      <span class="member">1</span>
-      <span class="article-classsify">
-        <a class="classify-title" href="">轻松学javascript</a> 
-      </span>
-    </li>
+    {% endfor %}
   </ul>
 </div>
 {% endblock %}
