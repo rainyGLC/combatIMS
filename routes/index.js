@@ -10,5 +10,7 @@ var indexController = require('./../controllers/index.js');
 
 router.get('/article',indexController.indexRender);
 router.get('/article/:id',indexController.detailsRender);
-
+router.get('/admin/*',function(req,res,next){
+  res.render('admin')
+})
 module.exports = router;

@@ -8,7 +8,6 @@ var articleController = require('./../controllers/article.js');
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
-
 router.post('/login',authController.login);
 
 router.post('/user',userController.insert);

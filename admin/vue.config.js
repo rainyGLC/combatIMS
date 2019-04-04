@@ -8,6 +8,6 @@ module.exports = {
     : 'admin.tpl',
   outputDir: '../public/admin',
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/admin/'
+    ? '/admin'
     : '/',
 }
