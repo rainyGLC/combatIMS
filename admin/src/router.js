@@ -10,46 +10,52 @@ import ArticlEdit from './views/article_edit.vue';
 Vue.use(Router);
 const appRouter = new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/admin/',
   routes: [
     {
-      path: '/admin/login',
+      path: '/login',
       name: 'login',
       component: Login,
     }, {
-      path: '/admin/user',
+      path: '/user',
       name: 'user',
       component: User,
     }, {
-      path: '/admin/classify',
+      path: '/classify',
       name: 'classify',
       component: Classify,
     }, {
-      path: '/admin/article',
+      path: '/article',
       name: 'article',
       component: Article,
     }, {
-      path: '/admin/article_create',
+      path: '/article_create',
       name: 'article_create',
       component: ArticleCreate,
     }, {
-      path: '/admin/article_edit/:id',
+      path: '/article_edit/:id',
       name: 'article_edit',
       component: ArticlEdit,
     },
   ],
 });
 
-// appRouter.beforeEach((to, from, next) =>{
-//   let name = to.name;
-//   let LoginPage = ['user','classify','article','article_create','article_edit'];
-//   let shouldLogin = LoginPage.some(data=>data === name);
-//   let isLogin = localStorage.getItem('token');
-//   if(shouldLogin && !isLogin){
-//     next('/admin/login')
-//     return
-//   }
-//   next()
-// });
+appRouter.beforeEach((to, from, next) => {
+  // eslint-disable-next-line
+  let name = to.name;
+  const LoginPage = ['user', 'classify', 'article', 'article_create', 'article_edit'];
+  const shouldLogin = LoginPage.some(data => data === name);
+  const isLogin = localStorage.getItem('token');
+
+  if (shouldLogin && !isLogin) {
+    next('/login');
+    return;
+  }
+  if (isLogin && name === 'login') {
+    next('/user');
+    return;
+  }
+  next();
+});
 
 export default appRouter;

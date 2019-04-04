@@ -1,7 +1,7 @@
 <template>
   <layout>
     <div class="classify-container">
-      <router-link class="article-router" to="/admin/article_create">
+      <router-link class="article-router" to="/article_create">
         新建文章
       </router-link>
       <div class="article-list">

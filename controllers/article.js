@@ -25,6 +25,7 @@ const articleController = {
       // console.log(classify_id);
       const article = await Article.joinClassify();
       res.json({code:200,data:article});
+      // article.reverse();
     }catch(e){
       console.log(e);
       res.json({code:0,data:e})

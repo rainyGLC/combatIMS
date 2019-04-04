@@ -28,13 +28,13 @@
                 <el-menu-item index="1">
                   <i class="el-icon-menu"></i>
                   <span slot="title">
-                    <router-link class="user-router" to="/admin/user">用户管理</router-link>
+                    <router-link class="user-router" to="/user">用户管理</router-link>
                   </span>
                 </el-menu-item>
                 <el-menu-item index="2">
                   <i class="el-icon-date"></i>
                   <span slot="title">
-                    <router-link class="user-router" to="/admin/classify">
+                    <router-link class="user-router" to="/classify">
                       分类管理
                     </router-link>
                   </span>
@@ -46,12 +46,12 @@
                   </template>
                   <el-menu-item-group>
                     <el-menu-item index="3-1">
-                      <router-link class="user-router" to="/admin/article">
+                      <router-link class="user-router" to="/article">
                         文章列表
                       </router-link>
                     </el-menu-item>
                     <el-menu-item index="3-2">
-                      <router-link class="user-router" to="/admin/article_create">
+                      <router-link class="user-router" to="/article_create">
                         新建文章
                       </router-link>
                     </el-menu-item>

@@ -1,7 +1,7 @@
 <template>
   <layout>
     <div class="articleCreate-container">
-      <router-link class="article-router" to="/admin/article">
+      <router-link class="article-router" to="/article">
         返回文章列表
       </router-link>
       <el-form class="form-article" ref="form" :model="article"
