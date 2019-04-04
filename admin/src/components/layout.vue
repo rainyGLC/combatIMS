@@ -10,7 +10,7 @@
         </div>
         <div class="height-outlogin">
           <el-row>
-            <el-button icon="el-icon-service">
+            <el-button icon="el-icon-service" @click="loginOut">
               退出系统
             </el-button>
           </el-row>
@@ -83,6 +83,11 @@ export default {
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath);
+    },
+    loginOut() {
+      localStorage.clear('ac');
+      console.log(localStorage);
+      this.$router.replace({ name: 'login' });
     },
   },
 };

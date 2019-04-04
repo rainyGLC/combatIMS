@@ -33,7 +33,7 @@ const appRouter = new Router({
       name: 'article_create',
       component: ArticleCreate,
     }, {
-      path: '/admin/article_edit:id',
+      path: '/admin/article_edit/:id',
       name: 'article_edit',
       component: ArticlEdit,
     },

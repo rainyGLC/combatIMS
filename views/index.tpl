@@ -5,6 +5,20 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{title}}</h1>
-<p>Welcome to {{title}} with nunjucks!</p>
+<div class="article-container">
+  <ul class="article-list">
+    <li class="article-item">
+      <span class="member">1</span>
+      <span class="article-classsify">
+        <a class="classify-title" href="">轻松学javascript</a> 
+      </span>
+    </li>
+    <li class="article-item">
+      <span class="member">1</span>
+      <span class="article-classsify">
+        <a class="classify-title" href="">轻松学javascript</a> 
+      </span>
+    </li>
+  </ul>
+</div>
 {% endblock %}

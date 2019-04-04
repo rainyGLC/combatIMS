@@ -72,7 +72,7 @@
 import userModel from '@/global/model/userModel';
 
 export default {
-  name: 'user',
+  name: 'User',
   data() {
     return {
       tableData: [],
@@ -134,18 +134,19 @@ export default {
     },
     editSave() {
       let id = this.inputDate.id;
+       // eslint-disable-next-line
       let name = this.inputDate.name;
       let phone = this.inputDate.phone;
       let password = this.inputDate.password;
       let params = { name, phone, password };
-      userModel.userUpdate(id, params).then((res) => {
+      userModel.userUpdate(id, params).then(() => {
         this.tableData.name = name;
         this.tableData.phone = phone;
         this.tableData.password = password;
         this.dialogFormVisible = false;
         this.$message.success('修改成功');
       }).catch((err) => {
-          console.log(err);
+        console.log(err);
         this.dialogFormVisible = false;
       });
     },
@@ -154,9 +155,7 @@ export default {
         confirmButtonText: '确定',
         concelButtonText: '取消',
         type: 'warning',
-      }).then(() => {
-        return userModel.userDelete(row.id);
-      }).then(() => {
+      }).then(() => userModel.userDelete(row.id)).then(() => {
         this.tableData.splice(index, 1);
         this.$message({
           type: 'success',
