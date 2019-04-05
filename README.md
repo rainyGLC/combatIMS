@@ -1,5 +1,4 @@
-README.md
-###项目介绍
+### 项目介绍
 极客学院的信息发布系统，通过后台配置的内容在前台中进行展示，支撑企业的信息发布和信息管理，运营人员会定期发布极客学院的新的动态及技术内容帮助大家及时的掌握前沿技术动态，更好的学习规划。为此需要一套信息管理发布系统来方便对他的内容进行发布、修改、删帖和分类等
 
 本项目为 Node.js 构建 Web API，并使用 Vue 配合 Element-ui 构建管理后台。主要考察对 Vue 在后台项目中的应用能力，分成以下五个部分：
@@ -13,7 +12,7 @@ README.md
 ![图片](https://uploader.shimo.im/f/valhfAWED9AW9oje.png!thumbnail)
 ![图片](https://uploader.shimo.im/f/XEL20xyE0oADzelo.png!thumbnail)
 
-###项目步骤
+### 项目步骤
 
     任务一： 环境搭建 主要通过 express-generator 快速搭建 Web 服务框架，在项目目录下创建admin文件夹并使用 Vue-Cli 快速搭建前端框架。
 
@@ -36,9 +35,9 @@ README.md
     任务十：项目优化 主要通过自己的想法，对项目进行调整和修改。
 
 ###启动项目
-cd combatIMS 
-npm install
-node ./bin/www
+    cd combatIMS 
+    npm install
+    node ./bin/www
 
 
 
