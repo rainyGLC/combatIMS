@@ -9,6 +9,10 @@ README.md
 三、Vue-router
 四、Element-ui
 
+产品流程图:
+![图片](https://uploader.shimo.im/f/valhfAWED9AW9oje.png!thumbnail)
+![图片](https://uploader.shimo.im/f/XEL20xyE0oADzelo.png!thumbnail)
+
 ###项目步骤
 
     任务一： 环境搭建 主要通过 express-generator 快速搭建 Web 服务框架，在项目目录下创建admin文件夹并使用 Vue-Cli 快速搭建前端框架。
@@ -32,7 +36,9 @@ README.md
     任务十：项目优化 主要通过自己的想法，对项目进行调整和修改。
 
 ###启动项目
-cd admin
+cd combatIMS 
+npm install
+node ./bin/www
 
 
 
