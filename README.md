@@ -34,9 +34,11 @@
 
     任务十：项目优化 主要通过自己的想法，对项目进行调整和修改。
 
-###启动项目
+### 启动项目
     cd combatIMS 
+
     npm install
+    
     node ./bin/www
 
 

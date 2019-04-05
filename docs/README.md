@@ -1,10 +1,13 @@
 # 
 
-在做极客信息发布系统中遇到的问题：
-路由配置问题：
-使用element-ui组件的问题：
-Nunjucks模版渲染中：for 可以遍历数组 (arrays) 和对象 (dictionaries)
+    在做极客信息发布系统中遇到的问题：
 
+    路由配置问题：
+
+    使用element-ui组件的问题：
+
+    Nunjucks模版渲染中：for 可以遍历数组 (arrays) 和对象 (dictionaries)
+    
     eg:var items =[{title:"foo,id:1},{title:'bar',id:2}];
       <h1>Posts</h1>
       <ul>
