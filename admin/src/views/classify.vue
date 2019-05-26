@@ -35,9 +35,7 @@
           <el-button type="primary" @click="classifySave">确 定</el-button>
         </div>
       </el-dialog>
-
     </div>
-
   </layout>
 
 </template>

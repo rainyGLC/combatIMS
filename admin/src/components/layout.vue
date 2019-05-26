@@ -18,6 +18,7 @@
       </el-header>
       <el-container>
         <el-aside>
+
           <el-row class="tac">
             <el-col :span="12" id="tac-col">
               <el-menu
@@ -60,6 +61,7 @@
               </el-menu>
             </el-col>
           </el-row>
+
         </el-aside>
         <el-main>
           <slot></slot>
